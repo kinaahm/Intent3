@@ -23,5 +23,12 @@ public class MainActivity extends AppCompatActivity {
                 composeSmsMessage("Pesan dari SMK Telkom Malang");
             }
         });
+
+        findViewById(R.id.imageViewBrowser).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openWebPage("http://www.smktelkom-mlg.sch.id");
+            }
+        });
     }
 }
